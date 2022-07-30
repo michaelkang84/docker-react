@@ -1,8 +1,6 @@
 # docker needs these permissions
 sudo: required
 
-language: generic
-
 servies:
   - docker
 
@@ -13,4 +11,3 @@ before_install:
 
 script:
   - docker run -e CI=true michael.kang/docker-react npm run test
-  
